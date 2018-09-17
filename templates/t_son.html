@@ -1,0 +1,29 @@
+{% extends "t.html" %}
+{% macro show(tent) %}
+  <h2>{{ tent }}</h2>
+  {{ caller() }}
+{% endmacro %}
+{% block one %}
+  {{ super() }}
+  <h2>这是block one的子模板填充内容 ：{{ name1 }}</h2>
+  {% call show('aaaaaa')  %}
+    <h1>这到底是什么东西</h1>
+  {% endcall %}
+{% endblock %}
+{% block two %}
+  <h2>这是block two的子模板填充内容 ：{{ name2 }}</h2>
+{% endblock %}
+{% block three %}
+  <h2>这是block three的子模板填充内容 ：{{ name3 }}</h2>
+  {% for i in xx recursive %}
+    {% if i[0] %}
+      {% if loop.first %}
+        <h2>let us start</h2>
+      {% endif %}
+      {{ loop(i) }}
+    {% else %}
+      <h2>NUM IS : {{ i }}</h2>
+    {% endif %}
+
+  {% endfor %}
+{% endblock %}

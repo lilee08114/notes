@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}" />
+</head>
+<body>
+{% block a %}
+<h1> {{ name }}</h1></hr>
+<h1>g 值{{ g.param}}</h1>
+<h1>session 值：{{dict(session) }}</h1>
+<h1>{{ some_str }}</h1>
+<h1>{{ int(some_int) }}</h1>
+<h1>{{ float(some_float) }}</h1>
+{% endblock %}
+{% for i in some_iter %}
+<h1>i</h1>
+{% endfor %}
+</body>
+</html>
