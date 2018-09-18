@@ -1,8 +1,7 @@
-
+from .config import Production
 from flask import Flask
 from flask_bootstrap import Bootstrap
 from .extension import db
-from .config import Production
 
 def create_app(config=None):
     app = Flask(__name__)

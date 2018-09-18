@@ -2,16 +2,15 @@
 '''
 a web project mainly to record and show pictures
 '''
+import os
 import os.path
 from uuid import uuid1
 from datetime import datetime
-from flask import Flask, request, render_template, current_app
+from flask import request, render_template, current_app, redirect, url_for
 from .extension import db
-from . import app
 from .form import PostPic
 from .model import Image
-
-
+from . import app
 
 @app.route('/')
 def home():
@@ -27,19 +26,22 @@ def upload_file():
         path = _get_image_storage_path()
         image_file.save(path)
         image = Image(image_path=path,
-                      title=request.form.title,
-                      description=request.form.description)
+                      title=request.form['title'],
+                      description=request.form['description'])
         db.session.add(image)
         db.session.commit()
-
+    return redirect(url_for('home'))
 
 def _get_image_storage_path():
     """get the image storage path, it will be generate by combining storage
        path plus date folder plus a unique id,
        images will be store in different directory base on upload date
     """
+    image_folder = current_app.config['IMAGE_UPLOADED_FILE']
     today = datetime.now().strftime("%Y-%m-%d")
-    image_folder_for_today = current_app.config['IMAGE_UPLOADED_FILE']
-    unique_id = uuid1()
-    unique_name = os.path.join(image_folder_for_today, today, unique_id)
-    return unique_name
+    image_folder_for_today = os.path.join(image_folder, today)
+    if not os.path.exists(image_folder_for_today):
+        os.makedirs(image_folder_for_today)
+    unique_id = str(uuid1())
+    unique_name = os.path.join(image_folder_for_today, unique_id)
+    return unique_name + '.jpg'
