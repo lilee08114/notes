@@ -1,15 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
 {% block head %}
-  <head>
+
     <meta charset="UTF-8">
     <title>Title</title>
-
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js"></script>
+{#    <script src="js/jquery.carousel.js"></script>#}
     {{ bootstrap.load_css() }}
-    {{ bootstrap.load_js() }}
-  </head>
-{% endblock %}
+    <style type="text/css">
+      .rotator-main {
+        position: relative;
+        width: 900px;
+        height: 400px
+      }
+
+      .rotator-main a, .rotator-main img { display: block; }
+
+      .rotator-main .rotator-list {
+        width: 900px;
+        height: 400px
+      }
+
+      .rotator-main .rotator-list .rotator-item {
+        position: absolute;
+        left: 0px;
+        top: 0px
+      }
+
+      .rotator-main .rotator-btn {
+        position: absolute;
+        height: 100%;
+        width: 100px;
+        top: 0px;
+        z-index: 10;
+        opacity: 0;
+      }
+
+      .rotator-main .rotator-prev-btn {
+        left: 0px;
+        background: url("../image/btn_l.png") no-repeat center center;
+        background-color: red
+      }
+
+      .rotator-main .rotator-next-btn {
+        right: 0px;
+        background: url("../image/btn_r.png") no-repeat center center;
+        background-color: red
+      }
+    </style>
+
+
+{% endblock %}  </head>
 
 {% block body %}
+  {{ bootstrap.load_js() }}
 {% endblock %}
+
 </html>
