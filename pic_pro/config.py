@@ -1,4 +1,4 @@
-
+# -*- coding: UTF-8 –*-
 
 class BaseConfig():
     SUBJECT_PREFIX = '主题前缀'
