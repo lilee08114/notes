@@ -38,9 +38,10 @@ def _get_image_storage_path():
        path plus date folder plus a unique id,
        images will be store in different directory base on upload date
     """
+    root_path = current_app.root_path
     image_folder = current_app.config['IMAGE_UPLOADED_FILE']
     today = datetime.now().strftime("%Y-%m-%d")
-    image_folder_for_today = os.path.join(image_folder, today)
+    image_folder_for_today = os.path.join(root_path, image_folder, today)
     if not os.path.exists(image_folder_for_today):
         os.makedirs(image_folder_for_today)
     unique_id = str(uuid1())

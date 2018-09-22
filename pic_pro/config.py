@@ -20,7 +20,7 @@ class Production(BaseConfig):
     TESTING = False
     ALLOWED_IMAGE_EXTENSION = "['jpg', 'png', 'gif']"
     MAX_IMAGE_SIZE = 5 * 1024 * 1024
-    IMAGE_UPLOADED_FILE = r'C:\Users\lilee\Desktop\fl\images'
+    IMAGE_UPLOADED_FILE = r'images'
     PRESERVE_CONTEXT_ON_EXCEPTION = True
 
 class Development(BaseConfig):
