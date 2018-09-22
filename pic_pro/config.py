@@ -16,7 +16,7 @@ class Production(BaseConfig):
     SQLALCHEMY_ECHO = False
     SECRET_KEY = 'I AM VERY STRONG'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    DEBIUG = False
+    DEBIUG = True
     TESTING = False
     ALLOWED_IMAGE_EXTENSION = "['jpg', 'png', 'gif']"
     MAX_IMAGE_SIZE = 5 * 1024 * 1024

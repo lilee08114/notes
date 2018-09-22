@@ -6,7 +6,8 @@ import os
 import os.path
 from uuid import uuid1
 from datetime import datetime
-from flask import request, render_template, current_app, redirect, url_for
+from flask import request, render_template, current_app, url_for
+from werkzeug.utils import redirect
 from .extension import db
 from .form import PostPic
 from .model import Image

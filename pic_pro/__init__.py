@@ -3,6 +3,7 @@ from flask import Flask
 from flask_bootstrap import Bootstrap
 from .extension import db
 
+
 def create_app(config=None):
     app = Flask(__name__)
 
