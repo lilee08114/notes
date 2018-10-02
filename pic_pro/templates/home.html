@@ -12,7 +12,8 @@
     <div class="caroursel rotator-demo">
       <ul class="rotator-list">
         {% for image in images %}
-          <li class="rotator-item"><img src="{{image.image_path}}"></li>
+          <li class="rotator-item"><img src="{{ url_for('static', filename=image.image_path) }}"
+                                        width="490" height="320"></li>
         {% endfor %}
       </ul>
       <div class="rotator-btn rotator-prev-btn"></div>

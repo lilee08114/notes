@@ -15,5 +15,5 @@ class PostPic(FlaskForm):
     def validate_image(form, field):
         max_size = app.config['MAX_IMAGE_SIZE']
         print ('图片内容长度为%s'%len(field.data))
-        if len(field.data) > max_size:
+        if len(field.data.content_length) > max_size:
             raise ValidationError('图片最大尺寸不超过 %sM'%(max_size/1024/1024))
