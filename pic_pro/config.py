@@ -18,9 +18,9 @@ class Production(BaseConfig):
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     DEBIUG = False
     TESTING = False
-    ALLOWED_IMAGE_EXTENSION = "['jpg', 'png', 'gif']"
+    ALLOWED_IMAGE_EXTENSION = ['jpg', 'png', 'gif']
     MAX_IMAGE_SIZE = 5 * 1024 * 1024
-    # MAX_CONTENT_LENGTH = 5 * 1024 * 1024
+    MAX_CONTENT_LENGTH = 5 * 1024 * 1024
     IMAGE_UPLOADED_FILE = r'images'
     PRESERVE_CONTEXT_ON_EXCEPTION = True
 
