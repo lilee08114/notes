@@ -8,17 +8,13 @@ from uuid import uuid1
 from datetime import datetime
 from flask import request, render_template, current_app, url_for, render_template_string
 from werkzeug.utils import redirect
-from werkzeug.exceptions import RequestEntityTooLarge
+
 from .extension import db
 from .form import PostPic
 from .model import Image
 from . import app
 
-@app.errorhandler(413)
-def entity_too_large(error):
-    return render_template_string('<html><h1>TOO LARGE!!</h1></html>'), 413
 
-app.register_error_handler(RequestEntityTooLarge, entity_too_large)
 
 @app.route('/')
 def home():

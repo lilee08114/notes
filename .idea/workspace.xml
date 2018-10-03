@@ -17,7 +17,7 @@
     <SUITE FILE_PATH="coverage/fl$pss.coverage" NAME="pss Coverage Results" MODIFIED="1533389124868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fl$Flask__sasa_py_.coverage" NAME="Flask (sasa.py) Coverage Results" MODIFIED="1536761987909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/fl$start.coverage" NAME="start Coverage Results" MODIFIED="1537108751239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pic_pro" />
-    <SUITE FILE_PATH="coverage/fl$start__1_.coverage" NAME="start (1) Coverage Results" MODIFIED="1538554018463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fl$start__1_.coverage" NAME="start (1) Coverage Results" MODIFIED="1538555806127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fl$Flask__f_py___1_.coverage" NAME="Flask (f.py) (1) Coverage Results" MODIFIED="1533217906612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
@@ -60,7 +60,7 @@
           <entry key="html" value="16" />
           <entry key="pic_pro" value="1" />
           <entry key="pstat" value="1" />
-          <entry key="py" value="84" />
+          <entry key="py" value="85" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -69,7 +69,7 @@
           <entry key="HTML" value="16" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Profiler Session" value="1" />
-          <entry key="Python" value="84" />
+          <entry key="Python" value="85" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -77,40 +77,30 @@
           <entry key="Python Console" value="3" />
           <entry key="dummy" value="4" />
           <entry key="html" value="1550" />
-          <entry key="py" value="6182" />
+          <entry key="py" value="6206" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1550" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="6185" />
+          <entry key="Python" value="6209" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pic_pro/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state relative-caret-position="300">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
-                <element signature="e#58#67#0" expanded="true" />
-                <marker date="1538554018440" expanded="true" signature="1468:1470" ph="..." />
-                <marker date="1538554018440" expanded="true" signature="1500:1505" ph="..." />
-                <marker date="1538554018440" expanded="true" signature="1500:2027" ph="..." />
+                <marker date="1538554373895" expanded="true" signature="1219:1221" ph="..." />
+                <marker date="1538554373895" expanded="true" signature="1251:1256" ph="..." />
+                <marker date="1538554373895" expanded="true" signature="1251:1778" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fl/Lib/site-packages/werkzeug/exceptions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="372" column="27" selection-start-line="372" selection-start-column="6" selection-end-line="372" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -120,6 +110,20 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
               <caret line="1798" selection-start-line="1798" selection-end-line="1798" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pic_pro/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+                <marker date="1538555806115" expanded="true" signature="202:207" ph="..." />
+                <marker date="1538555806115" expanded="true" signature="289:294" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -197,8 +201,8 @@
       <find>static</find>
       <find>'static'</find>
       <find>FileStorage</find>
-      <find>error</find>
       <find>413</find>
+      <find>error</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\lilee\Desktop\fl</dir>
@@ -228,11 +232,11 @@
         <option value="$PROJECT_DIR$/pic_pro/model.py" />
         <option value="$PROJECT_DIR$/pic_pro/templates/layout.html" />
         <option value="$PROJECT_DIR$/start.py" />
-        <option value="$PROJECT_DIR$/pic_pro/__init__.py" />
         <option value="$PROJECT_DIR$/pic_pro/templates/home.html" />
         <option value="$PROJECT_DIR$/pic_pro/form.py" />
         <option value="$PROJECT_DIR$/pic_pro/config.py" />
         <option value="$PROJECT_DIR$/pic_pro/views.py" />
+        <option value="$PROJECT_DIR$/pic_pro/__init__.py" />
       </list>
     </option>
   </component>
@@ -242,7 +246,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="90" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -269,23 +273,7 @@
             <path>
               <item name="fl" type="b2602c69:ProjectViewProjectNode" />
               <item name="fl" type="462c0819:PsiDirectoryNode" />
-              <item name="fl" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fl" type="462c0819:PsiDirectoryNode" />
-              <item name="fl" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fl" type="462c0819:PsiDirectoryNode" />
-              <item name="fl" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="werkzeug" type="462c0819:PsiDirectoryNode" />
+              <item name="pic_pro" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fl" type="b2602c69:ProjectViewProjectNode" />
@@ -782,17 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pic_pro/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-            <marker date="1537606493185" expanded="true" signature="149:154" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fl/Lib/site-packages/pip/wheel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2476">
@@ -890,13 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fl/Lib/site-packages/flask/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="1798" selection-start-line="1798" selection-end-line="1798" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fl/Lib/site-packages/werkzeug/datastructures.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1614">
@@ -946,13 +916,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pic_pro/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="300">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
-            <element signature="e#58#67#0" expanded="true" />
-            <marker date="1538554018440" expanded="true" signature="1468:1470" ph="..." />
-            <marker date="1538554018440" expanded="true" signature="1500:1505" ph="..." />
-            <marker date="1538554018440" expanded="true" signature="1500:2027" ph="..." />
+            <marker date="1538554373895" expanded="true" signature="1219:1221" ph="..." />
+            <marker date="1538554373895" expanded="true" signature="1251:1256" ph="..." />
+            <marker date="1538554373895" expanded="true" signature="1251:1778" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fl/Lib/site-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="1798" selection-start-line="1798" selection-end-line="1798" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pic_pro/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <marker date="1538555806115" expanded="true" signature="202:207" ph="..." />
+            <marker date="1538555806115" expanded="true" signature="289:294" ph="..." />
           </folding>
         </state>
       </provider>
