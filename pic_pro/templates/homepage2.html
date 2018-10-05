@@ -1,0 +1,1118 @@
+{% extends 'layout.html' %}
+{% from 'bootstrap/form.html' import render_form %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+
+{% block body %}
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+
+        <header>
+            <div class="top-news">
+                   <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-md-3 dark-gray-bg text-right">
+                               <h5 class="text-uppercase white text-bold">BREAKING NEWS</h5>
+                           </div>
+                           <div class="col-md-9 light-gray-bg">
+                                <div class="top-news-slide">
+                                    <div class="item">
+                                       <p class="e-light-gray text-uppercase">Apple boosts iMac screen resolution, lowers price of top-end 27-in. machine by 8%</p>
+                                   </div>
+                                   <div class="item">
+                                       <p class="e-light-gray text-uppercase">Apple boosts iMac screen resolution, lowers price of top-end 27-in. machine by 8%</p>
+                                   </div>
+                                   <div class="item">
+                                       <p class="e-light-gray text-uppercase">Apple boosts iMac screen resolution, lowers price of top-end 27-in. machine by 8%</p>
+                                   </div>
+                                </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="main-head">
+                   <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3 text-right">
+                               <h1 class="logo"><span class="hidden">ECOTA</span><img src="img/logo.png" alt=""></h1>
+                           </div>
+                           <div class="col-md-9 dark-gray-bg no-padding">
+                               <div class="add-area text-center">
+                                   <img class="img-responsive" src="img/add.jpg" alt="">
+                               </div>
+                                   <nav class="navbar navbar-default no-mb">
+                                          <div class="navbar-header">
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                              <span class="sr-only">Toggle navigation</span>
+                                              <span class="icon-bar"></span>
+                                              <span class="icon-bar"></span>
+                                              <span class="icon-bar"></span>
+                                            </button>
+                                          </div>
+                                          <div id="navbar" class="navbar-collapse collapse no-margin no-padding">
+                                            <ul class="nav navbar-nav">
+                                              <li class="dropdown active">
+                                                <a href="#" class="red-nav dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <i class="fa fa-bars"></i> <span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                  <li><a href="index.html">Homepage 1</a></li>
+                                                  <li><a href="homepage2.html">Homepage 2</a></li>
+                                                </ul>
+                                              </li>
+                                              <li><a class="pink-nav" href="#">Coding <i class="fa fa-bars"></i></a></li>
+                                              <li><a class="sky-blue-nav" href="#">Design <i class="fa fa-bars"></i></a></li>
+                                              <li><a class="orange-nav" href="#">Mobile <i class="fa fa-bars"></i></a></li>
+                                              <li><a class="violet-nav" href="#">Graphic <i class="fa fa-bars"></i></a></li>
+                                              <!-- <li><a class="green-nav" href="#">UI design <i class="fa fa-bars"></i></a></li> -->
+                                             <li class="dropdown">
+                                                <a href="#" class="red-nav dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <i class="fa fa-bars"></i> <span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                  <li><a href="about.html">About Us</a></li>
+                                                  <li><a href="about-author.html">About</a></li>
+                                                  <li><a href="standard-post.html">Standard Post</a></li>
+                                                  <li><a href="video-post.html">Video Post</a></li>
+                                                  <li><a href="audio-post.html">Audio Post</a></li>
+
+                                                </ul>
+                                              </li>
+                                              <li><a class="green-nav" href="contact.html">Contact <i class="fa fa-bars"></i></a></li>
+                                            </ul>
+                                          </div><!--/.nav-collapse -->
+                                  </nav>
+                           </div>
+                        </div>
+                   </div>
+               </div>
+        </header>
+
+        <section>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4 no-padding">
+                <div class="h2-img">
+                  <img class="img-responsive" src="img/h2-1.jpg" alt="">
+                  <div class="overlay"> </div>
+                  <div class="h2-content">
+                    <a href="#" class="btn btn-pink text-uppercase text-bold">entertainment</a>
+                    <h4 class="title-t white text-bold text-uppercase lh-30 mt-20 mb-20">Grammar schools: What are they and why are they controversial?</h4>
+                    <a href="#" class="btn btn-trans text-uppercase text-bold ls-2">Read More</a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 no-padding">
+                <div class="h2-img">
+                  <img class="img-responsive" src="img/h2-2.jpg" alt="">
+                  <div class="overlay"> </div>
+                  <div class="h2-content">
+                    <a href="#" class="btn btn-violet-t text-uppercase">technology</a>
+                    <h4 class="title-t white text-bold text-uppercase lh-30 mt-20 mb-20">Why 'Hoverboard' Scooters are Actually Just Segways</h4>
+                    <a href="#" class="btn btn-trans text-uppercase text-bold ls-2">Read More</a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 no-padding">
+                <div class="h2-img">
+                  <img class="img-responsive" src="img/h2-3.jpg" alt="">
+                  <div class="overlay"> </div>
+                  <div class="h2-content">
+                    <a href="#" class="btn btn-orange-t text-uppercase">Sports</a>
+                    <h4 class="title-t white text-bold text-uppercase lh-30 mt-20 mb-20">Sunderland boss Sam Allardyce talks West Ham</h4>
+                    <a href="#" class="btn btn-trans text-uppercase text-bold ls-2">Read More</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container">
+            <div class="row row-eq-height mt-20">
+                    <div class="col-md-3">
+                        <div class="article text-center mt-40">
+                            <div class="high-slider-img">
+                                <img src="img/la1.jpg" alt="" class="img-responsive">
+                            </div>
+                            <h6 class="title text-uppercase orange mt-20"> Sports</h6>
+                            <h4 class="text-uppercase dark-gray text-bold mt-20">But they got diff'rent </h4>
+                            <span class="sep"></span>
+                            <span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+                        </div>
+                        <div class="article text-center mt-40">
+                            <div class="high-slider-img">
+                                <img src="img/la2.jpg" alt="" class="img-responsive">
+                            </div>
+                            <h6 class="title text-uppercase green-t mt-20">political</h6>
+                            <h4 class="text-uppercase dark-gray text-bold mt-20"> And they're always glad</h4>
+                            <span class="sep"></span>
+                            <span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 article-border mt-40">
+                        <div class="text-center">
+                            <div class="high-slider-img">
+                                <img src="img/ent4.jpg" alt="" class="img-responsive">
+                            </div>
+                            <h6 class="title text-uppercase pink mt-30">entertainment</h6>
+                            <h4 class="text-uppercase dark-gray text-bold mt-10 lh-30">Volkswagen scandal over diesel emission <br> headed for Hollywood</h4>
+                            <span class="sep"></span>
+                            <span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="article text-center mt-40">
+                            <div class="high-slider-img">
+                                <img src="img/la4.jpg" alt="" class="img-responsive">
+                            </div>
+                            <h6 class="title text-uppercase pink mt-20">entertainment</h6>
+                            <h4 class="text-uppercase dark-gray text-bold mt-20">Here comes Speed Racer</h4>
+                            <span class="sep"></span>
+                            <span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+                        </div>
+                        <div class="article text-center mt-40">
+                            <div class="high-slider-img">
+                                <img src="img/la5.jpg" alt="" class="img-responsive">
+                            </div>
+                            <h6 class="title text-uppercase blue mt-20">Business</h6>
+                            <h4 class="text-uppercase dark-gray text-bold mt-20">ground came a bubblin</h4>
+                            <span class="sep"></span>
+                            <span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </section>
+        <section class="trending-news mt-80 trending-news-bg-1">
+            <span class="start"></span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="text-uppercase text-bold white">Trending news</h2>
+                    </div>
+                </div>
+                <div class="trending-slider">
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4 text-center mt-40">
+                                <div class="high-slider-img">
+                                    <img src="img/trend1.jpg" alt="" class="img-responsive">
+                                </div>
+                                <h6 class="title text-uppercase orange mt-20">Sports</h6>
+                                <h4 class="text-uppercase white text-bold mt-20">Whitehall to overrule councils</h4>
+                                <span class="sep"></span>
+                                <span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+                            </div>
+                            <div class="col-md-4 text-center mt-40">
+                                <div class="high-slider-img">
+                                    <img src="img/trend2.jpg" alt="" class="img-responsive">
+                                </div>
+                                <h6 class="title text-uppercase pink mt-20">Entertenment</h6>
+                                <h4 class="text-uppercase white text-bold mt-20">Homeland and Downton Abbey</h4>
+                                <span class="sep"></span>
+                                <span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+                            </div>
+                            <div class="col-md-4 text-center mt-40">
+                                <div class="high-slider-img">
+                                    <img src="img/h1.jpg" alt="" class="img-responsive">
+                                </div>
+                                <h6 class="title text-uppercase violet mt-20">Technology</h6>
+                                <h4 class="text-uppercase white text-bold mt-20">The children accused of being</h4>
+                                <span class="sep"></span>
+                                <span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4 text-center mt-40">
+                                <div class="high-slider-img">
+                                    <img src="img/trend1.jpg" alt="" class="img-responsive">
+                                </div>
+                                <h6 class="title text-uppercase orange mt-20">Sports</h6>
+                                <h4 class="text-uppercase white text-bold mt-20">Whitehall to overrule councils</h4>
+                                <span class="sep"></span>
+                                <span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+                            </div>
+                            <div class="col-md-4 text-center mt-40">
+                                <div class="high-slider-img">
+                                    <img src="img/trend2.jpg" alt="" class="img-responsive">
+                                </div>
+                                <h6 class="title text-uppercase pink mt-20">Entertenment</h6>
+                                <h4 class="text-uppercase white text-bold mt-20">Homeland and Downton Abbey</h4>
+                                <span class="sep"></span>
+                                <span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+                            </div>
+                            <div class="col-md-4 text-center mt-40">
+                                <div class="high-slider-img">
+                                    <img src="img/h1.jpg" alt="" class="img-responsive">
+                                </div>
+                                <h6 class="title text-uppercase violet mt-20">Technology</h6>
+                                <h4 class="text-uppercase white text-bold mt-20">The children accused of being</h4>
+                                <span class="sep"></span>
+                                <span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4 text-center mt-40">
+                                <div class="high-slider-img">
+                                    <img src="img/trend1.jpg" alt="" class="img-responsive">
+                                </div>
+                                <h6 class="title text-uppercase orange mt-20">Sports</h6>
+                                <h4 class="text-uppercase white text-bold mt-20">Whitehall to overrule councils</h4>
+                                <span class="sep"></span>
+                                <span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+                            </div>
+                            <div class="col-md-4 text-center mt-40">
+                                <div class="high-slider-img">
+                                    <img src="img/trend2.jpg" alt="" class="img-responsive">
+                                </div>
+                                <h6 class="title text-uppercase pink mt-20">Entertenment</h6>
+                                <h4 class="text-uppercase white text-bold mt-20">Homeland and Downton Abbey</h4>
+                                <span class="sep"></span>
+                                <span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+                            </div>
+                            <div class="col-md-4 text-center mt-40">
+                                <div class="high-slider-img">
+                                    <img src="img/h1.jpg" alt="" class="img-responsive">
+                                </div>
+                                <h6 class="title text-uppercase violet mt-20">Technology</h6>
+                                <h4 class="text-uppercase white text-bold mt-20">The children accused of being</h4>
+                                <span class="sep"></span>
+                                <span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="f-news">
+          <div class="container">
+            <div class="row row-eq-height row-border p-20">
+              <div class="f-news-slider">
+                <div class="item " data-hash="fn-1">
+                  <div class="col-md-7 no-padding">
+                    <img class="img-responsive" src="img/f-news1.jpg" alt="">
+                  </div>
+                  <div class="col-md-5 no-padding ">
+                    <div class="f-news-content mt-40 pl-30">
+                      <a href="#" class="btn btn-sky-blue-t text-uppercase">World</a>
+                      <h5 class="title-t white text-uppercase text-bold d-black lh-34 mt-20 mb-10">Freddie Gray case: Attorneys will try to exclude officer</h5>
+                      <span class="add v-light-gray text-uppercase mt-20 ">Oct 12, 2016  /  5 Comments</span>
+                      <p class="mt-20">The Love Boat soon will be making another run. The Love Boat promises something for everyone. The Brady Bunch the Brady Bunch.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item" data-hash="fn-2">
+                  <div class="col-md-7 no-padding">
+                    <img class="img-responsive" src="img/f-news1.jpg" alt="">
+                  </div>
+                  <div class="col-md-5 no-padding ">
+                    <div class="f-news-content mt-40 pl-30">
+                      <a href="#" class="btn btn-sky-blue-t text-uppercase">World</a>
+                      <h5 class="title-t white text-uppercase text-bold d-black lh-34 mt-20 mb-10">Freddie Gray case: Attorneys will try to exclude officer</h5>
+                      <span class="add v-light-gray text-uppercase mt-20 ">Oct 12, 2016  /  5 Comments</span>
+                      <p class="mt-20">The Love Boat soon will be making another run. The Love Boat promises something for everyone. The Brady Bunch the Brady Bunch.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item" data-hash="fn-3">
+                  <div class="col-md-7 no-padding">
+                    <img class="img-responsive" src="img/f-news1.jpg" alt="">
+                  </div>
+                  <div class="col-md-5 no-padding ">
+                    <div class="f-news-content mt-40 pl-30">
+                      <a href="#" class="btn btn-sky-blue-t text-uppercase">World</a>
+                      <h5 class="title-t white text-uppercase text-bold d-black lh-34 mt-20 mb-10">Freddie Gray case: Attorneys will try to exclude officer</h5>
+                      <span class="add v-light-gray text-uppercase mt-20 ">Oct 12, 2016  /  5 Comments</span>
+                      <p class="mt-20">The Love Boat soon will be making another run. The Love Boat promises something for everyone. The Brady Bunch the Brady Bunch.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item" data-hash="fn-4">
+                  <div class="col-md-7 no-padding">
+                    <img class="img-responsive" src="img/f-news1.jpg" alt="">
+                  </div>
+                  <div class="col-md-5 no-padding ">
+                    <div class="f-news-content mt-40 pl-30">
+                      <a href="#" class="btn btn-sky-blue-t text-uppercase">World</a>
+                      <h5 class="title-t white text-uppercase text-bold d-black lh-34 mt-20 mb-10">Freddie Gray case: Attorneys will try to exclude officer</h5>
+                      <span class="add v-light-gray text-uppercase mt-20 ">Oct 12, 2016  /  5 Comments</span>
+                      <p class="mt-20">The Love Boat soon will be making another run. The Love Boat promises something for everyone. The Brady Bunch the Brady Bunch.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="f-news-nav">
+                  <a href="#fn-1"><img src="img/f-n1.jpg" alt=""></a>
+                  <a href="#fn-2"><img src="img/f-n2.jpg" alt=""></a>
+                  <a href="#fn-3"><img src="img/f-n3.jpg" alt=""></a>
+                  <a href="#fn-4"><img src="img/f-n4.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="h2-products">
+          <div class="container">
+            <div class="row">
+                    <div class="col-md-6">
+                        <div class="product-p-img">
+                            <img class="img-responsive" src="img/sports.jpg" alt="">
+                            <div class="product-p-content text-center white-bg">
+                                <a href="#" class="btn btn-orange-t text-uppercase">Sports</a>
+                                <h5 class="title text-uppercase d-black text-bold mt-10">Reus misses sum up Germany's</h5>
+                                <p class="mt-20 mb-20">Got a dream and we just know now we're gonna make our dream come true! Now the don't move.</p>
+                                <span class="add v-light-gray text-uppercase">
+                                    Oct 12, 2016  /  5 Comments
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="product-p-img">
+                            <img class="img-responsive" src="img/cars1.jpg" alt="">
+                            <div class="product-p-content text-center white-bg">
+                                <a href="#" class="btn btn-pink text-uppercase">entertainment</a>
+                                <h5 class="title text-uppercase d-black text-bold mt-10">Downton Abbey review: is this the man</h5>
+                                <p class="mt-20 mb-20">Takin' a break from all your worries sure would help a lot. You wanna be where you can see.</p>
+                                <span class="add v-light-gray text-uppercase">
+                                    Oct 12, 2016  /  5 Comments
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col-md-4 ">
+                    <div class="product-p-img mt-20">
+                        <img class="img-responsive" src="img/tec.jpg" alt="">
+                        <div class="product-p-content product-p-content-small text-center white-bg">
+                            <a href="#" class="btn btn-violet-t text-uppercase">technology</a>
+                            <h5 class="title text-uppercase d-black text-bold">Dell poised to reveal $53bn</h5>
+                            <p class="mt-20 mb-20">The first mate and his Skipper too will do their very best to make</p>
+                            <span class="add v-light-gray text-uppercase">
+                                Oct 12, 2016  /  5 Comments
+                            </span>
+                        </div>
+                    </div>
+                    <div class="product-p-img mt-20">
+                            <img class="img-responsive" src="img/political1.jpg" alt="">
+                            <div class="product-p-content product-p-content-small text-center white-bg">
+                                <a href="#" class="btn btn-green text-uppercase">political</a>
+                                <h5 class="title text-uppercase d-black text-bold">Ken Clarke: 'Tone Theresa</h5>
+                                <p class="mt-20 mb-20">The first mate and his Skipper too will do their very best to make</p>
+                                <span class="add v-light-gray text-uppercase">
+                                    Oct 12, 2016  /  5 Comments
+                                </span>
+                            </div>
+                        </div>
+                    <div class="product-p-img mt-20">
+                        <img class="img-responsive" src="img/ent5.jpg" alt="">
+                        <div class="product-p-content product-p-content-small text-center white-bg">
+                            <a href="#" class="btn btn-pink text-uppercase">entertainment</a>
+                            <h5 class="title text-uppercase d-black text-bold">AKA zooms in on Noah magic</h5>
+                            <p class="mt-20 mb-20">The first mate and his Skipper too will do their very best to make</p>
+                            <span class="add v-light-gray text-uppercase">
+                                Oct 12, 2016  /  5 Comments
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-p-img mt-20">
+                        <img class="img-responsive" src="img/ent2.jpg" alt="">
+                        <div class="product-p-content product-p-content-small text-center white-bg">
+                            <a href="#" class="btn btn-pink text-uppercase">entertainment</a>
+                            <h5 class="title text-uppercase d-black text-bold">Tributes paid as Camera</h5>
+                            <p class="mt-20 mb-20">The first mate and his Skipper too will do their very best to make</p>
+                            <span class="add v-light-gray text-uppercase">
+                                Oct 12, 2016  /  5 Comments
+                            </span>
+                        </div>
+                    </div>
+                    <div class="product-p-img mt-20">
+                            <img class="img-responsive" src="img/bike1.jpg" alt="">
+                            <div class="product-p-content product-p-content-small text-center white-bg">
+                                <a href="#" class="btn btn-orange-t text-uppercase">sports</a>
+                                <h5 class="title text-uppercase d-black text-bold">England must target</h5>
+                                <p class="mt-20 mb-20">The first mate and his Skipper too will do their very best to make</p>
+                                <span class="add v-light-gray text-uppercase">
+                                    Oct 12, 2016  /  5 Comments
+                                </span>
+                            </div>
+                        </div>
+                    <div class="product-p-img mt-20">
+                        <img class="img-responsive" src="img/tec3.jpg" alt="">
+                        <div class="product-p-content product-p-content-small text-center white-bg">
+                            <a href="#" class="btn btn-violet-t text-uppercase">technology</a>
+                            <h5 class="title text-uppercase d-black text-bold">Fibre rivals took surprise</h5>
+                            <p class="mt-20 mb-20">The first mate and his Skipper too will do their very best to make</p>
+                            <span class="add v-light-gray text-uppercase">
+                                Oct 12, 2016  /  5 Comments
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-20">
+                  <h3 class="d-black text-bold text-uppercase border-top pt-30">Popular posts</h3>
+                  <div class="p-posts mt-40">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a class="text-uppercase text-bold white" data-toggle="tab" href="#week">Week</a></li>
+                        <li><a class="text-uppercase text-bold white" data-toggle="tab" href="#month">Month</a></li>
+                        <li><a class="text-uppercase text-bold white" data-toggle="tab" href="#all">All</a></li>
+                    </ul>
+                      <div class="tab-content">
+                        <div id="week" class="tab-pane fade in active">
+                            <div id="popular-post-1" class="pp">
+                              <div class="item">
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp1.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase pink mt-20">entertainment</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Buckingham Palace soil used in Tate exhibit</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp2.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase orange mt-20">Sports</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Legendary coach Steve Spurrier was truly </h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp3.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase violet mt-20">Technology</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Acer reveals all-in-one Windows 10 PC</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp4.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase pink mt-20">entertainment</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Revival allows Selena Gomez to shed</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp1.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase pink mt-20">entertainment</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Buckingham Palace soil used in Tate exhibit</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp2.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase orange mt-20">Sports</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Legendary coach Steve Spurrier was truly </h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp3.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase violet mt-20">Technology</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Acer reveals all-in-one Windows 10 PC</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp4.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase pink mt-20">entertainment</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Revival allows Selena Gomez to shed</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp1.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase pink mt-20">entertainment</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Buckingham Palace soil used in Tate exhibit</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp2.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase orange mt-20">Sports</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Legendary coach Steve Spurrier was truly </h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp3.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase violet mt-20">Technology</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Acer reveals all-in-one Windows 10 PC</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp4.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase pink mt-20">entertainment</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Revival allows Selena Gomez to shed</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div id="month" class="tab-pane fade in active">
+                            <div id="popular-post-2" class="pp">
+                              <div class="item">
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp1.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase pink mt-20">entertainment</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Buckingham Palace soil used in Tate exhibit</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp2.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase orange mt-20">Sports</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Legendary coach Steve Spurrier was truly </h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp3.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase violet mt-20">Technology</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Acer reveals all-in-one Windows 10 PC</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp4.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase pink mt-20">entertainment</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Revival allows Selena Gomez to shed</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp1.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase pink mt-20">entertainment</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Buckingham Palace soil used in Tate exhibit</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp2.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase orange mt-20">Sports</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Legendary coach Steve Spurrier was truly </h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp3.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase violet mt-20">Technology</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Acer reveals all-in-one Windows 10 PC</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp4.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase pink mt-20">entertainment</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Revival allows Selena Gomez to shed</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp1.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase pink mt-20">entertainment</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Buckingham Palace soil used in Tate exhibit</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp2.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase orange mt-20">Sports</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Legendary coach Steve Spurrier was truly </h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp3.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase violet mt-20">Technology</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Acer reveals all-in-one Windows 10 PC</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp4.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase pink mt-20">entertainment</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Revival allows Selena Gomez to shed</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div id="all" class="tab-pane fade in active">
+                            <div id="popular-post-3" class="pp">
+                              <div class="item">
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp1.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase pink mt-20">entertainment</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Buckingham Palace soil used in Tate exhibit</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp2.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase orange mt-20">Sports</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Legendary coach Steve Spurrier was truly </h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp3.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase violet mt-20">Technology</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Acer reveals all-in-one Windows 10 PC</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp4.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase pink mt-20">entertainment</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Revival allows Selena Gomez to shed</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp1.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase pink mt-20">entertainment</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Buckingham Palace soil used in Tate exhibit</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp2.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase orange mt-20">Sports</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Legendary coach Steve Spurrier was truly </h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp3.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase violet mt-20">Technology</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Acer reveals all-in-one Windows 10 PC</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp4.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase pink mt-20">entertainment</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Revival allows Selena Gomez to shed</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp1.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase pink mt-20">entertainment</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Buckingham Palace soil used in Tate exhibit</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp2.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase orange mt-20">Sports</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Legendary coach Steve Spurrier was truly </h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp3.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase violet mt-20">Technology</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Acer reveals all-in-one Windows 10 PC</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="pp-post mt-30">
+                                  <img class="pull-left" src="img/pp4.jpg" alt="">
+                                  <div class="pp-content">
+                                    <h6 class="title text-uppercase pink mt-20">entertainment</h6>
+                                    <h5 class="text-uppercase lh-24 mt-10 mb-10">Revival allows Selena Gomez to shed</h5>
+                                    <span>Oct 13, 2016</span>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="pp-social mt-50">
+                    <h4 class="white text-uppercase text-bold text-center">Social MEdia</h4>
+                    <div class="pp-social-icons text-center">
+                      <div class="pp-icon mt-30">
+                        <i class="fa fa-facebook fa-lg white fb-bg"></i>
+                        <h4 class="title-t">228,480</h4>
+                        <h4>Fans</h4>
+                      </div>
+                      <div class="pp-icon mt-30">
+                        <i class="fa fa-twitter fa-lg white twitter-bg"></i>
+                        <h4 class="title-t">21,563</h4>
+                        <h4>Followers</h4>
+                      </div>
+                      <div class="pp-icon mt-30">
+                        <i class="fa fa-linkedin fa-lg white linkedin-bg"></i>
+                        <h4 class="title-t">20,563</h4>
+                        <h4>Followers</h4>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="pp-icon mt-30">
+                        <i class="fa fa-youtube fa-lg white youtube-bg"></i>
+                        <h4 class="title-t">8,125</h4>
+                        <h4>Subscribers</h4>
+                      </div>
+                      <div class="pp-icon mt-30">
+                        <i class="fa fa-vimeo-square fa-lg white vimeo-bg"></i>
+                        <h4 class="title-t">2,253</h4>
+                        <h4>Subscribers</h4>
+                      </div>
+                      <div class="pp-icon mt-30">
+                        <i class="fa fa-dribbble fa-lg white dribbble-bg"></i>
+                        <h4 class="title-t">10,563</h4>
+                        <h4>Followers</h4>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+            </div>
+          </div>
+
+        </section>
+        <section class="more-news">
+          <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mn-news mt-70">
+                            <div class="item" data-hash="v1">
+                                <div class="video-img">
+                                    <img class="img-responsive" src="img/mnb1.jpg" alt="">
+                                    <div class="mn-overlay text-center">
+                                        <h4 class="pink text-uppercase">Entertainment</h4>
+                                        <h3 class="lh-34 d-black text-uppercase text-bold mt-20">Tottenham injury news: Ryan Mason and Nabil <br>Bentaleb could be available for</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" data-hash="v2">
+                                <div class="video-img">
+                                    <img class="img-responsive" src="img/mnb1.jpg" alt="">
+                                    <div class="mn-overlay text-center">
+                                        <h4 class="pink text-uppercase">Entertainment</h4>
+                                        <h3 class="lh-34 d-black text-uppercase text-bold mt-20">Tottenham injury news: Ryan Mason and Nabil <br>Bentaleb could be available for</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" data-hash="v3">
+                                <div class="video-img">
+                                    <img class="img-responsive" src="img/mnb1.jpg" alt="">
+                                    <div class="mn-overlay text-center">
+                                        <h4 class="pink text-uppercase">Entertainment</h4>
+                                        <h3 class="lh-34 d-black text-uppercase text-bold mt-20">Tottenham injury news: Ryan Mason and Nabil <br>Bentaleb could be available for</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" data-hash="v4">
+                                <div class="video-img">
+                                    <img class="img-responsive" src="img/mnb1.jpg" alt="">
+                                    <div class="mn-overlay text-center">
+                                        <h4 class="pink text-uppercase">Entertainment</h4>
+                                        <h3 class="lh-34 d-black text-uppercase text-bold mt-20">Tottenham injury news: Ryan Mason and Nabil <br>Bentaleb could be available for</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="v-nav white-bg">
+                            <a href="#v1"><img src="img/vt1.jpg" alt=""></a>
+                            <a href="#v2"><img src="img/mn1.jpg" alt=""></a>
+                            <a href="#v3"><img src="img/vt3.jpg" alt=""></a>
+                            <a href="#v4"><img src="img/vt4.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-100 mb-120">
+          <div class="container">
+            <div class="row row-eq-height mt-20">
+                    <div class="col-md-3">
+                        <div class="article text-center mt-40">
+                            <div class="high-slider-img">
+                                <img src="img/cars2.jpg" alt="" class="img-responsive">
+                            </div>
+                            <h6 class="title text-uppercase orange mt-20"> Sports</h6>
+                            <h4 class="text-uppercase dark-gray text-bold mt-20">WhitehalUEFA charge </h4>
+                            <span class="sep"></span>
+                            <span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+                        </div>
+                        <div class="article text-center mt-40">
+                            <div class="high-slider-img">
+                                <img src="img/dance.jpg" alt="" class="img-responsive">
+                            </div>
+                            <h6 class="title text-uppercase green-t mt-20">political</h6>
+                            <h4 class="text-uppercase dark-gray text-bold mt-20"> Jay Z attends start of Big</h4>
+                            <span class="sep"></span>
+                            <span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 article-border mt-40">
+                        <div class="text-center">
+                            <div class="high-slider-img">
+                                <img src="img/ent7.jpg" alt="" class="img-responsive">
+                            </div>
+                            <h6 class="title text-uppercase pink mt-20">entertainment</h6>
+                            <h4 class="text-uppercase dark-gray text-bold mt-20 lh-30">Water companies' £800m windfall not passed on to consumers</h4>
+                            <span class="sep"></span>
+                            <span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="article text-center mt-40">
+                            <div class="high-slider-img">
+                                <img src="img/ent6.jpg" alt="" class="img-responsive">
+                            </div>
+                            <h6 class="title text-uppercase pink mt-20">entertainment</h6>
+                            <h4 class="text-uppercase dark-gray text-bold mt-20">Finn out of tour; Jordan</h4>
+                            <span class="sep"></span>
+                            <span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+                        </div>
+                        <div class="article text-center mt-40">
+                            <div class="high-slider-img">
+                                <img src="img/business2.jpg" alt="" class="img-responsive">
+                            </div>
+                            <h6 class="title text-uppercase blue mt-20">Business</h6>
+                            <h4 class="text-uppercase dark-gray text-bold mt-20">John McDonnell admits</h4>
+                            <span class="sep"></span>
+                            <span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+        <footer>
+            <div class="upperfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="fbt">
+                                <h3 class="white text-uppercase text-bold hr-b mt-30"> About us</h3>
+                                <p class="mt-40 f-gray">A man is born he's a man of means. Then along come two they got nothin' but their jeans. The ship set ground on the shore of this uncharted gilligan</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="fbt">
+                                <h3 class="white text-uppercase text-bold hr-b mt-30">Recent post</h3>
+                                <div class="r-post mt-50">
+                                    <img class="pull-left" src="img/rp1.png" alt="">
+                                    <div class="r-post-content pull-right">
+                                        <span class="foo text-uppercase f-gray">The first mate and Skipper too will do their</span>
+                                        <span class="add f-gray mt-10">Oct 10, 2016</span>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="r-post mt-20">
+                                    <img class="pull-left" src="img/rp2.png" alt="">
+                                    <div class="r-post-content pull-right">
+                                        <span class="foo text-uppercase f-gray">All of them had hair of gold like their mother</span>
+                                        <span class="add f-gray mt-10">Oct 10, 2016</span>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="r-post mt-20">
+                                    <img class="pull-left" src="img/rp3.png" alt="">
+                                    <div class="r-post-content pull-right">
+                                        <span class="foo text-uppercase f-gray">So this is the tale of our long long time</span>
+                                        <span class="add f-gray mt-10">Oct 10, 2016</span>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="fbt">
+                                <h3 class="white text-uppercase text-bold hr-b mt-30"> Twitter feed</h3>
+                                <div class="twitter-feed mt-50">
+                                    <div class="col-md-1 col-xs-2">
+                                        <i class="fa fa-twitter"></i>
+                                    </div>
+                                    <div class="col-md-11 col-xs-10">
+                                        <h4 class="text-uppercase white">Got a dream and we just know now we gonna <span> @ JAMES ANderson</span></h4>
+                                        <h6 class="title text-uppercase white mt-10">1 hours ago</h6>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="twitter-feed mt-20">
+                                    <div class="col-md-1 col-xs-2">
+                                        <i class="fa fa-twitter"></i>
+                                    </div>
+                                    <div class="col-md-11 col-xs-10">
+                                        <h4 class="text-uppercase white">Got a dream and we just know now we gonna <span> @ Micheal hosting</span></h4>
+                                        <h6 class="title text-uppercase white mt-10">1 hours ago</h6>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="twitter-feed mt-20">
+                                    <div class="col-md-1 col-xs-2">
+                                        <i class="fa fa-twitter"></i>
+                                    </div>
+                                    <div class="col-md-11 col-xs-10">
+                                        <h4 class="text-uppercase white">Got a dream and we just know now we gonna <span> @ chris evans </span></h4>
+                                        <h6 class="title text-uppercase white mt-10">1 hours ago</h6>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-70">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="fbt">
+                                <h3 class="white text-uppercase text-bold hr-b mt-30"> CONNECT WITH US</h3>
+                                <p class="mt-40 f-gray">That this group would somehow form a family that's the way we all became the Brady Bunch. The mate was a mighty sailin' man the Skipper brave and sure. Five passengers set sail that day for a three hour tour a three hour tour.</p>
+                                <div class="f-social mt-20">
+                                    <a class="mt-10" href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                    <a class="mt-10" href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                    <a class="mt-10" href="#"><i class="fa fa-pinterest fa-lg"></i></a>
+                                    <a class="mt-10" href="#"><i class="fa fa-instagram fa-lg"></i></a>
+                                    <a class="mt-10" href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                                    <a class="mt-10" href="#"><i class="fa fa-tumblr fa-lg"></i></a>
+                                    <a class="mt-10" href="#"><i class="fa fa-github fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-6 col-md-offset-1">
+                            <div class="fbt">
+                                <h3 class="white text-uppercase text-bold hr-b mt-30"> popular tags</h3>
+                                <div class="popular-tags mt-50">
+                                    <a href="#" class="btn btn-gray">Android</a>
+                                    <a href="#" class="btn btn-gray">Apple</a>
+                                    <a href="#" class="btn btn-gray">Apps and Software</a>
+                                    <a href="#" class="btn btn-gray">Dev and Design</a>
+                                    <a href="#" class="btn btn-gray">Gallery</a>
+                                    <a href="#" class="btn btn-gray">Games</a><br>
+                                    <a href="#" class="btn btn-gray">Life and Style</a>
+                                    <a href="#" class="btn btn-gray">Technology</a><br>
+                                    <a href="#" class="btn btn-gray">Sports</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lowerfooter">
+
+                <div class="row">
+                    <div class="col-md-10 v-d-bg col-md-offset-2">
+                        <div class="col-md-8 col-sm-8"><img src="img/logo-f.png" alt=""></div>
+                        <div class="col-md-4"><p class="white">Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+  {{super()}}
+    </body>
+{% endblock %}

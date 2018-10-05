@@ -29,6 +29,9 @@
 {#    <div>{{ form.description.label }}: {{ form.description() }}</div>#}
 {#    <div>{{ form.submit.label }}: {{ form.submit() }}</div>#}
     {{ render_form(form) }}
+    {% for message in get_flashed_messages() %}
+      {{ message }}
+    {% endfor %}
   </form>
   </body>
   {{ super() }}

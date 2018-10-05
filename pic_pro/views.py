@@ -21,7 +21,7 @@ def home():
     form = PostPic()
     latest_ten_images = Image.query.filter_by().order_by(Image.id).limit(10).all()
     return render_template('home.html', form=form,
-                           images=[latest_ten_images[-1]])
+                           images=latest_ten_images)
 
 
 @app.route('/upload/', methods=['POST'])

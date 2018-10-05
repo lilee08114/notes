@@ -26,7 +26,6 @@ class StreamConsumingMiddleware(object):
 
 def create_app(config=None):
     app = Flask(__name__)
-    app.wagi_app = StreamConsumingMiddleware(app)
 
     @app.errorhandler(413)
     def entity_too_large(error):

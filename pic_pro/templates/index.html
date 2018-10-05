@@ -1,0 +1,431 @@
+{% extends 'layout.html' %}
+{% from 'bootstrap/form.html' import render_form %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block body %}
+<body>
+<!--[if lt IE 8]>
+	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<!-- Add your site or application content here -->
+
+<div class="main-slider">
+  {% for image in images %}
+	<div class="item">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="m-slider-img">
+					<img class="img-responsive"  src="{{ url_for('static', filename=image.image_path) }}" alt="">
+          <p class="m-slider-custom">
+          <div class="m-slider-custom text-bold text-uppercase title white ls-2 " >
+            <span style="position: absolute; bottom: 7pt; left: 20%;" >{{image.title}}</span>
+          </div>
+          </p>
+					<div class="m-slider-overlay">
+					</div>
+
+          <div class="m-slider-content">
+{#						<a href="#" class="btn btn-pink text-uppercase">entertainment</a>#}
+{#						<h1 class="text-bold text-uppercase title white ls-2">Brace yourselves</h1>#}
+{#						<a href="#" class="btn text-uppercase btn-trans text-bold ls-2">Read More</a>#}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endfor %}
+
+</div><br><br><br><br><br><br><br><br><br><br>
+<section class="highlights no-margin">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h4 class="title text-uppercase black text-bold">The Highlights</h4>
+			</div>
+		</div>
+		<div class="high-slider">
+			<div class="item">
+				<div class="row">
+					<div class="col-sm-4 text-center mt-40">
+						<div class="high-slider-img">
+							<img src="{{ url_for('static', filename='img/h1.jpg' )}}" alt="" class="img-responsive">
+						</div>
+						<h6 class="title text-uppercase violet mt-20">Technology</h6>
+						<h4 class="text-uppercase dark-gray text-bold mt-20">Whitehall to overrule councils</h4>
+						<span class="sep"></span>
+						<span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+					</div>
+					<div class="col-sm-4 text-center mt-40">
+						<div class="high-slider-img">
+							<img src="{{ url_for('static', filename='img/h2.jpg' )}}" alt="" class="img-responsive">
+						</div>
+						<h6 class="title text-uppercase pink mt-20">entertainment</h6>
+						<h4 class="text-uppercase dark-gray text-bold mt-20">Homeland and Downton Abbey</h4>
+						<span class="sep"></span>
+						<span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+					</div>
+					<div class="col-sm-4 text-center mt-40">
+						<div class="high-slider-img">
+							<img src="{{ url_for('static', filename='img/h3.jpg' )}}" alt="" class="img-responsive">
+						</div>
+						<h6 class="title text-uppercase orange mt-20">sports</h6>
+						<h4 class="text-uppercase dark-gray text-bold mt-20">The children accused of being</h4>
+						<span class="sep"></span>
+						<span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="row">
+					<div class="col-sm-4 text-center mt-40">
+						<div class="high-slider-img">
+							<img src="{{ url_for('static', filename='img/h1.jpg' )}}" alt="" class="img-responsive">
+						</div>
+						<h6 class="title text-uppercase violet mt-20">Technology</h6>
+						<h4 class="text-uppercase dark-gray text-bold mt-20">Whitehall to overrule councils</h4>
+						<span class="sep"></span>
+						<span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+					</div>
+					<div class="col-sm-4 text-center mt-40">
+						<div class="high-slider-img">
+							<img src="{{ url_for('static', filename='img/h2.jpg') }}" alt="" class="img-responsive">
+						</div>
+						<h6 class="title text-uppercase pink mt-20">entertainment</h6>
+						<h4 class="text-uppercase dark-gray text-bold mt-20">Homeland and Downton Abbey</h4>
+						<span class="sep"></span>
+						<span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+					</div>
+					<div class="col-sm-4 text-center mt-40">
+						<div class="high-slider-img">
+							<img src="{{ url_for('static', filename='img/h3.jpg') }}" alt="" class="img-responsive">
+						</div>
+						<h6 class="title text-uppercase orange mt-20">sports</h6>
+						<h4 class="text-uppercase dark-gray text-bold mt-20">The children accused of being</h4>
+						<span class="sep"></span>
+						<span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="row">
+					<div class="col-sm-4 text-center mt-40">
+						<div class="high-slider-img">
+							<img src="{{ url_for('static', filename='img/h1.jpg' )}}" alt="" class="img-responsive">
+						</div>
+						<h6 class="title text-uppercase violet mt-20">Technology</h6>
+						<h4 class="text-uppercase dark-gray text-bold mt-20">Whitehall to overrule councils</h4>
+						<span class="sep"></span>
+						<span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+					</div>
+					<div class="col-sm-4 text-center mt-40">
+						<div class="high-slider-img">
+							<img src="{{ url_for('static', filename='img/h2.jpg' )}}"img/h2.jpg"" alt="" class="img-responsive">
+						</div>
+						<h6 class="title text-uppercase pink mt-20">entertainment</h6>
+						<h4 class="text-uppercase dark-gray text-bold mt-20">Homeland and Downton Abbey</h4>
+						<span class="sep"></span>
+						<span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+					</div>
+					<div class="col-sm-4 text-center mt-40">
+						<div class="high-slider-img">
+							<img src="{{ url_for('static', filename='img/h3.jpg' )}}" alt="" class="img-responsive">
+						</div>
+						<h6 class="title text-uppercase orange mt-20">sports</h6>
+						<h4 class="text-uppercase dark-gray text-bold mt-20">The children accused of being</h4>
+						<span class="sep"></span>
+						<span class="add v-light-gray text-uppercase">Oct 12, 2016  /  5 Comments</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{#<section class="subscribe">#}
+{#	<span class="start"></span>#}
+{#	<div class="row">#}
+{#		<div class="col-md-12">#}
+{#			<h2 class="text-uppercase white text-bold text-center">subscribe to our newsleter</h2>#}
+{#			<form action="#">#}
+{#				<div class="row mt-50">#}
+{#					<div class="col-md-4 col-md-offset-1">#}
+{#					  <input type="text" class="form-control" placeholder="Your Name">#}
+{#					</div>#}
+{#					<div class="col-md-4">#}
+{#					  <input type="email" class="form-control" placeholder="Email address">#}
+{#					</div>#}
+{#					<div class="col-md-2 text-left">#}
+{#						<a href="#" class="btn btn-black text-uppercase text-bold">Subscribe</a>#}
+{#					</div>#}
+{#				</div>#}
+{#			</form>#}
+{#		</div>#}
+{#	</div>#}
+{##}
+{#</section>#}
+<section class="section mb-100">
+	<div class="container">
+		<div class="row">
+			<div class="new-steps">
+				<div class="item" data-hash="1">
+					<div class="col-md-12">
+						<div class="new-step-img">
+							<img class="img-responsive" src="{{ url_for('static', filename='img/step2.jpg' )}}" alt="">
+							<div class="new-step-content text-center">
+								<h3 class="text-uppercase d-black text-bold">Take a step that is new</h3>
+								<p class="mt-25">Could you be mine. Just sit right back and you'll hear a tale a tale of a fateful trip that started from this tropic port aboard this tiny ship. The Brady Bunch the.</p>
+								<div class="mt-25">
+{#									<a href="#" class="btn btn-black text-uppercase text-bold ls-2">Read More</a>#}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item" data-hash="2">
+					<div class="col-md-12">
+						<div class="new-step-img">
+							<img class="img-responsive" src="{{ url_for('static', filename='img/step2.jpg' )}}" alt="">
+							<div class="new-step-content text-center">
+								<h3 class="text-uppercase d-black text-bold">Take a step that is new</h3>
+								<p class="mt-25">Could you be mine. Just sit right back and you'll hear a tale a tale of a fateful trip that started from this tropic port aboard this tiny ship. The Brady Bunch the.</p>
+								<div class="mt-25">
+{#									<a href="#" class="btn btn-black text-uppercase text-bold ls-2">Read More</a>#}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item" data-hash="3">
+					<div class="col-md-12">
+						<div class="new-step-img">
+							<img class="img-responsive" src="{{ url_for('static', filename='img/step2.jpg' )}}" alt="">
+							<div class="new-step-content text-center">
+								<h3 class="text-uppercase d-black text-bold">Take a step that is new</h3>
+								<p class="mt-25">Could you be mine. Just sit right back and you'll hear a tale a tale of a fateful trip that started from this tropic port aboard this tiny ship. The Brady Bunch the.</p>
+								<div class="mt-25">
+{#									<a href="#" class="btn btn-black text-uppercase text-bold ls-2">Read More</a>#}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item" data-hash="4">
+					<div class="col-md-12">
+						<div class="new-step-img">
+							<img class="img-responsive" src="{{ url_for('static', filename='img/step2.jpg' )}}" alt="">
+							<div class="new-step-content text-center">
+								<h3 class="text-uppercase d-black text-bold">Take a step that is new</h3>
+								<p class="mt-25">Could you be mine. Just sit right back and you'll hear a tale a tale of a fateful trip that started from this tropic port aboard this tiny ship. The Brady Bunch the.</p>
+								<div class="mt-25">
+{#									<a href="#" class="btn btn-black text-uppercase text-bold ls-2">Read More</a>#}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="url-hash">
+					<a href="#1">
+						<img class="img-responsive" src="{{ url_for('static', filename='img/new-thumb1.jpg' )}}" alt="">
+						<h5 class="text-uppercase white">Give us any rule to kill</h5>
+					</a>
+					<a href="#2">
+						<img class="img-responsive" src="{{ url_for('static', filename='img/new-thumb2.jpg' )}}" alt="">
+						<h5 class="text-uppercase white">Give us any rule to kill</h5>
+					</a>
+					<a href="#3">
+						<img class="img-responsive" src="{{ url_for('static', filename='img/new-thumb3.jpg' )}}" alt="">
+						<h5 class="text-uppercase white">Give us any rule to kill</h5>
+					</a>
+					<a href="#4">
+						<img class="img-responsive" src="{{ url_for('static', filename='img/new-thumb4.jpg' )}}" alt="">
+						<h5 class="text-uppercase white">Give us any rule to kill</h5>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="products-main">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="product-p-img">
+					<img class="img-responsive" src="{{ url_for('static', filename='img/sports.jpg' )}}" alt="">
+					<div class="product-p-content text-center white-bg">
+						<a href="#" class="btn btn-orange-t text-uppercase">Sports</a>
+						<h5 class="title text-uppercase d-black text-bold mt-10">Reus misses sum up Germany's</h5>
+						<p class="mt-20 mb-20">Got a dream and we just know now we're gonna make our dream come true! Now the don't move.</p>
+						<span class="add v-light-gray text-uppercase">
+							Oct 12, 2016  /  5 Comments
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="product-p-img">
+					<img class="img-responsive" src="{{ url_for('static', filename='img/ent1.jpg' )}}" alt="">
+					<div class="product-p-content text-center white-bg">
+{#						<a href="#" class="btn btn-pink text-uppercase">entertainment</a>#}
+						<h5 class="title text-uppercase d-black text-bold mt-10">Downton Abbey review: is this the man</h5>
+						<p class="mt-20 mb-20">Takin' a break from all your worries sure would help a lot. You wanna be where you can see.</p>
+						<span class="add v-light-gray text-uppercase">
+							Oct 12, 2016  /  5 Comments
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-6 mt-20">
+				<div class="product-p-img">
+					<img class="img-responsive" src="{{ url_for('static', filename='img/tec.jpg' )}}" alt="">
+					<div class="product-p-content product-p-content-small text-center white-bg">
+						<a href="#" class="btn btn-violet-t text-uppercase">technology</a>
+						<h5 class="title text-uppercase d-black text-bold">Dell poised to reveal $53bn</h5>
+						<p class="mt-20 mb-20">The first mate and his Skipper too will do their very best to make</p>
+						<span class="add v-light-gray text-uppercase">
+							Oct 12, 2016  /  5 Comments
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 mt-20">
+				<div class="product-p-img">
+					<img class="img-responsive" src="{{ url_for('static', filename='img/ent2.jpg' )}}" alt="">
+					<div class="product-p-content product-p-content-small text-center white-bg">
+{#						<a href="#" class="btn btn-pink text-uppercase">entertainment</a>#}
+						<h5 class="title text-uppercase d-black text-bold">Tributes paid as Camera</h5>
+						<p class="mt-20 mb-20">The first mate and his Skipper too will do their very best to make</p>
+						<span class="add v-light-gray text-uppercase">
+							Oct 12, 2016  /  5 Comments
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 mt-20">
+				<div class="product-p-img">
+					<img class="img-responsive" src="{{ url_for('static', filename='img/political.jpg' )}}" alt="">
+					<div class="product-p-content product-p-content-small text-center white-bg">
+						<a href="#" class="btn btn-green text-uppercase">political</a>
+						<h5 class="title text-uppercase d-black text-bold">PM planning nine-month</h5>
+						<p class="mt-20 mb-20">The first mate and his Skipper too will do their very best to make</p>
+						<span class="add v-light-gray text-uppercase">
+							Oct 12, 2016  /  5 Comments
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-6 mt-20">
+				<div class="product-p-img">
+					<img class="img-responsive" src="{{ url_for('static', filename='img/political1.jpg') }}" alt="">
+					<div class="product-p-content product-p-content-small text-center white-bg">
+						<a href="#" class="btn btn-green text-uppercase">political</a>
+						<h5 class="title text-uppercase d-black text-bold">Ken Clarke: 'Tone Theresa</h5>
+						<p class="mt-20 mb-20">The first mate and his Skipper too will do their very best to make</p>
+						<span class="add v-light-gray text-uppercase">
+							Oct 12, 2016  /  5 Comments
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 mt-20">
+				<div class="product-p-img">
+					<img class="img-responsive" src="{{ url_for('static', filename='img/sports1.jpg') }}" alt="">
+					<div class="product-p-content product-p-content-small text-center white-bg">
+						<a href="#" class="btn btn-orange-t text-uppercase">sports</a>
+						<h5 class="title text-uppercase d-black text-bold">England must target</h5>
+						<p class="mt-20 mb-20">The first mate and his Skipper too will do their very best to make</p>
+						<span class="add v-light-gray text-uppercase">
+							Oct 12, 2016  /  5 Comments
+						</span>
+					</div>
+				</div>
+			</div>
+			 <div class="col-md-4 col-sm-6 mt-20">
+				<div class="product-p-img">
+					<img class="img-responsive" src="{{ url_for('static', filename='img/tec1.jpg') }}" alt="">
+					<div class="product-p-content product-p-content-small text-center white-bg">
+						<a href="#" class="btn btn-violet-t text-uppercase">sports</a>
+						<h5 class="title text-uppercase d-black text-bold">Ireland's Sean O'Brien</h5>
+						<p class="mt-20 mb-20">The first mate and his Skipper too will do their very best to make</p>
+						<span class="add v-light-gray text-uppercase">
+							Oct 12, 2016  /  5 Comments
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</section>
+<section class="funfacts">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="fun-numbers">
+					<div class="fun-n">
+						<h5 class="d-black">2 <span class="text-upperccase">MIL</span></h5>
+						<span class="text-uppercase">print audience</span>
+					</div>
+					<div class="fun-n">
+						<h5 class="d-black">1.7 <span class="text-upperccase">MIL</span></h5>
+						<span class="text-uppercase">Monthly Audience</span>
+					</div>
+					<div class="fun-n">
+						<h5 class="d-black">#1 <span class="text-upperccase"></span></h5>
+						<span class="text-uppercase">online magzine</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<h2 class="title text-uppercase d-black text-bold">Then one day he was shootin' at some food and</h2>
+				<p class="mt-20">The Love Boat soon will be making another run. The Love Boat promises something for everyone. The Brady Bunch the Brady Bunch that's the way we all became the Brady Bunch. </p>
+
+				<div class="more-facts mt-60">
+					<div class="col-md-4 col-sm-4">
+						<div class="twitter-fact twitter-bg">
+							<h6 class="title white text-uppercase text-bold pull-left">Just Now</h6>
+							<i class="pull-right fa fa-twitter fa-lg white"></i>
+							<div class="clearfix"></div>
+							<p class="white mt-20"> “Come and listen to a story about a man named Jed - a poor mountaineer....”</p>
+						</div>
+						<div class="fb-fact fb-bg mt-20">
+							<h6 class="title white text-uppercase text-bold pull-left">30 mins ago</h6>
+							<i class="pull-right fa fa-facebook fa-lg white"></i>
+							<div class="clearfix"></div>
+							<p class="white mt-20">Like Robinson Crusoe it's primitive as can be. </p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="fact-img">
+							<img src="{{ url_for('static', filename='img/cars.jpg') }}" class="img-responsive" alt="">
+							<div class="fact-overlay">
+								<h3 class="white text-uppercase text-bold">So they loaded up the truck moved Beverly</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="fact-img">
+							<img src="{{ url_for('static', filename='img/bike.jpg') }}" class="img-responsive" alt="">
+							<div class="fact-overlay">
+								<h3 class="white text-uppercase text-bold">Then one day he was shootin' at some food</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+{{ super() }}
+</body>
+{% endblock %}
+

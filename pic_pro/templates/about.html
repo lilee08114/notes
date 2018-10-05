@@ -1,0 +1,360 @@
+{% extends 'layout.html' %}
+{% from 'bootstrap/form.html' import render_form %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block body %}
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+
+        <header>
+            <div class="top-news">
+                   <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-md-3 dark-gray-bg text-right">
+                               <h5 class="text-uppercase white text-bold">BREAKING NEWS</h5>
+                           </div>
+                           <div class="col-md-9 light-gray-bg">
+                                <div class="top-news-slide">
+                                    <div class="item">
+                                       <p class="e-light-gray text-uppercase">Apple boosts iMac screen resolution, lowers price of top-end 27-in. machine by 8%</p>
+                                   </div>
+                                   <div class="item">
+                                       <p class="e-light-gray text-uppercase">Apple boosts iMac screen resolution, lowers price of top-end 27-in. machine by 8%</p>
+                                   </div>
+                                   <div class="item">
+                                       <p class="e-light-gray text-uppercase">Apple boosts iMac screen resolution, lowers price of top-end 27-in. machine by 8%</p>
+                                   </div>
+                                </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="main-head">
+                   <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3 text-right">
+                               <h1 class="logo"><span class="hidden">ECOTA</span><img src="img/logo.png" alt=""></h1>
+                           </div>
+                           <div class="col-md-9 dark-gray-bg no-padding">
+                               <div class="add-area text-center">
+                                   <img class="img-responsive" src="img/add.jpg" alt="">
+                               </div>
+                                   <nav class="navbar navbar-default no-mb">
+                                          <div class="navbar-header">
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                              <span class="sr-only">Toggle navigation</span>
+                                              <span class="icon-bar"></span>
+                                              <span class="icon-bar"></span>
+                                              <span class="icon-bar"></span>
+                                            </button>
+                                          </div>
+                                          <div id="navbar" class="navbar-collapse collapse no-margin no-padding">
+                                            <ul class="nav navbar-nav">
+                                              <li class="dropdown active">
+                                                <a href="#" class="red-nav dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <i class="fa fa-bars"></i> <span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                  <li><a href="index.html">Homepage 1</a></li>
+                                                  <li><a href="homepage2.html">Homepage 2</a></li>
+                                                </ul>
+                                              </li>
+                                              <li><a class="pink-nav" href="#">Coding <i class="fa fa-bars"></i></a></li>
+                                              <li><a class="sky-blue-nav" href="#">Design <i class="fa fa-bars"></i></a></li>
+                                              <li><a class="orange-nav" href="#">Mobile <i class="fa fa-bars"></i></a></li>
+                                              <li><a class="violet-nav" href="#">Graphic <i class="fa fa-bars"></i></a></li>
+                                              <!-- <li><a class="green-nav" href="#">UI design <i class="fa fa-bars"></i></a></li> -->
+                                             <li class="dropdown">
+                                                <a href="#" class="red-nav dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <i class="fa fa-bars"></i> <span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                  <li><a href="about.html">About Us</a></li>
+                                                  <li><a href="about-author.html">About</a></li>
+                                                  <li><a href="standard-post.html">Standard Post</a></li>
+                                                  <li><a href="video-post.html">Video Post</a></li>
+                                                  <li><a href="audio-post.html">Audio Post</a></li>
+
+                                                </ul>
+                                              </li>
+                                              <li><a class="green-nav" href="contact.html">Contact <i class="fa fa-bars"></i></a></li>
+                                            </ul>
+                                          </div><!--/.nav-collapse -->
+                                  </nav>
+                           </div>
+                        </div>
+                   </div>
+               </div>
+        </header>
+
+        <div class="page-title about-title">
+          <div class="container-fluid">
+            <h2 class="p-title white text-uppercase text-bold">ABout Us</h2>
+          </div>
+        </div>
+        <section class="mt-116">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 about-us">
+                <img class="img-responsive" src="img/about.jpg" alt="">
+                <div class="about-us-content">
+                  <h3 class="white text-uppercase btn-pink">About Us</h3>
+                  <p class="fz-15 lh-32 mt-10">They really are a scream the Addams Family?" In a freak mishap Ranger 3 and its pilot Captain William Buck Rogers are blown out of their trajectory into an orbit which freezes his life support systems and returns Buck Rogers to Earth five-hundred years later. And we'll do it our way yes our way. </p>
+                  <p class="c-555 fz-15 lh-32 text-italic mt-30">Make all our dreams come true for me and you. Texas tea. In 1972 a crack commando unit was sent to prison by a military court for a crime they didn't commit. These men promptly escaped from a maximum security stockade to the Los Angeles underground.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mt-20">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h2 class="text-bold text-uppercase d-black">our greats</h2>
+              </div>
+            </div>
+            <div class="row mb-50">
+              <div class="col-md-4 mt-70">
+                <div class="author-img">
+                  <img class="img-responsive" src="img/author1.jpg" alt="">
+                  <div class="overlay"></div>
+                  <div class="author-hover">
+                    <div class="author-hover-inner text-center">
+                      <h4 class="d-black text-uppercase text-bold"> Dwayne Johnson</h4>
+                      <h6 class="title orange text-uppercase serif mt-10">founder -</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mt-70">
+                <div class="author-img">
+                  <img class="img-responsive" src="img/author2.jpg" alt="">
+                  <div class="overlay"></div>
+                  <div class="author-hover">
+                    <div class="author-hover-inner text-center">
+                      <h4 class="d-black text-uppercase text-bold"> chris evans</h4>
+                      <h6 class="title orange text-uppercase serif mt-10">editor</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mt-70">
+                <div class="author-img">
+                  <img class="img-responsive" src="img/author3.jpg" alt="">
+                  <div class="overlay"></div>
+                  <div class="author-hover">
+                    <div class="author-hover-inner text-center">
+                      <h4 class="d-black text-uppercase text-bold"> hendrick wiils</h4>
+                      <h6 class="title orange text-uppercase serif mt-10">Photographer</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="subscribe mt-116">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-uppercase white text-bold text-center">subscribe to our newsleter</h2>
+                    <form action="#">
+                        <div class="row mt-50">
+                            <div class="col-md-4 col-md-offset-1">
+                              <input type="text" class="form-control" placeholder="Your Name">
+                            </div>
+                            <div class="col-md-4">
+                              <input type="email" class="form-control" placeholder="Email address">
+                            </div>
+                            <div class="col-md-2 text-left">
+                                <a href="#" class="btn btn-black text-uppercase text-bold">Subscribe</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        <section class="mt-116 mb-120">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h2 class="d-black text-center text-uppercase text-bold">Words from our reader</h2>
+                <div class="col-md-10 col-md-offset-1 mt-50">
+                  <p class="lh-34 text-italic text-uppercase">
+                  Travelled down the road and back again. Your heart is true you're a pal and a confidant. These days are all Happy and Free. These days are all share them with me oh baby. Then one day he was shootin' at some food and up through the ground crude. </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 mt-50">
+                <div class="row row-eq-height">
+                  <div class="col-sm-6">
+                    <img class="img-responsive" src="img/reader1.png" alt="">
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="reader-text">
+                      <h4 class="text-uppercase text-bold d-black d-bb">mitchel johnson</h4>
+                      <h6 class="title mont orange text-uppercase mt-30">Sydney, australia</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mt-50">
+                <div class="row row-eq-height">
+                  <div class="col-sm-6">
+                    <img class="img-responsive" src="img/reader2.png" alt="">
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="reader-text">
+                      <h4 class="text-uppercase text-bold d-black d-bb">john carter</h4>
+                      <h6 class="title mont orange text-uppercase mt-30">Sydney, australia</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mt-50">
+                <div class="row row-eq-height">
+                  <div class="col-sm-6">
+                    <img class="img-responsive" src="img/reader3.png" alt="">
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="reader-text">
+                      <h4 class="text-uppercase text-bold d-black d-bb">rickson</h4>
+                      <h6 class="title mont orange text-uppercase mt-30">Sydney, australia</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <footer>
+            <div class="upperfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="fbt">
+                                <h3 class="white text-uppercase text-bold hr-b mt-30"> About us</h3>
+                                <p class="mt-40 f-gray">A man is born he's a man of means. Then along come two they got nothin' but their jeans. The ship set ground on the shore of this uncharted gilligan</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="fbt">
+                                <h3 class="white text-uppercase text-bold hr-b mt-30">Recent post</h3>
+                                <div class="r-post mt-50">
+                                    <img class="pull-left" src="img/rp1.png" alt="">
+                                    <div class="r-post-content pull-right">
+                                        <span class="foo text-uppercase f-gray">The first mate and Skipper too will do their</span>
+                                        <span class="add f-gray mt-10">Oct 10, 2016</span>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="r-post mt-20">
+                                    <img class="pull-left" src="img/rp2.png" alt="">
+                                    <div class="r-post-content pull-right">
+                                        <span class="foo text-uppercase f-gray">All of them had hair of gold like their mother</span>
+                                        <span class="add f-gray mt-10">Oct 10, 2016</span>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="r-post mt-20">
+                                    <img class="pull-left" src="img/rp3.png" alt="">
+                                    <div class="r-post-content pull-right">
+                                        <span class="foo text-uppercase f-gray">So this is the tale of our long long time</span>
+                                        <span class="add f-gray mt-10">Oct 10, 2016</span>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="fbt">
+                                <h3 class="white text-uppercase text-bold hr-b mt-30"> Twitter feed</h3>
+                                <div class="twitter-feed mt-50">
+                                    <div class="col-md-1 col-xs-2">
+                                        <i class="fa fa-twitter"></i>
+                                    </div>
+                                    <div class="col-md-11 col-xs-10">
+                                        <h4 class="text-uppercase white">Got a dream and we just know now we gonna <span> @ JAMES ANderson</span></h4>
+                                        <h6 class="title text-uppercase white mt-10">1 hours ago</h6>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="twitter-feed mt-20">
+                                    <div class="col-md-1 col-xs-2">
+                                        <i class="fa fa-twitter"></i>
+                                    </div>
+                                    <div class="col-md-11 col-xs-10">
+                                        <h4 class="text-uppercase white">Got a dream and we just know now we gonna <span> @ Micheal hosting</span></h4>
+                                        <h6 class="title text-uppercase white mt-10">1 hours ago</h6>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="twitter-feed mt-20">
+                                    <div class="col-md-1 col-xs-2">
+                                        <i class="fa fa-twitter"></i>
+                                    </div>
+                                    <div class="col-md-11 col-xs-10">
+                                        <h4 class="text-uppercase white">Got a dream and we just know now we gonna <span> @ chris evans </span></h4>
+                                        <h6 class="title text-uppercase white mt-10">1 hours ago</h6>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-70">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="fbt">
+                                <h3 class="white text-uppercase text-bold hr-b mt-30"> CONNECT WITH US</h3>
+                                <p class="mt-40 f-gray">That this group would somehow form a family that's the way we all became the Brady Bunch. The mate was a mighty sailin' man the Skipper brave and sure. Five passengers set sail that day for a three hour tour a three hour tour.</p>
+                                <div class="f-social mt-20">
+                                    <a class="mt-10" href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                    <a class="mt-10" href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                    <a class="mt-10" href="#"><i class="fa fa-pinterest fa-lg"></i></a>
+                                    <a class="mt-10" href="#"><i class="fa fa-instagram fa-lg"></i></a>
+                                    <a class="mt-10" href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                                    <a class="mt-10" href="#"><i class="fa fa-tumblr fa-lg"></i></a>
+                                    <a class="mt-10" href="#"><i class="fa fa-github fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-6 col-md-offset-1">
+                            <div class="fbt">
+                                <h3 class="white text-uppercase text-bold hr-b mt-30"> popular tags</h3>
+                                <div class="popular-tags mt-50">
+                                    <a href="#" class="btn btn-gray">Android</a>
+                                    <a href="#" class="btn btn-gray">Apple</a>
+                                    <a href="#" class="btn btn-gray">Apps and Software</a>
+                                    <a href="#" class="btn btn-gray">Dev and Design</a>
+                                    <a href="#" class="btn btn-gray">Gallery</a>
+                                    <a href="#" class="btn btn-gray">Games</a><br>
+                                    <a href="#" class="btn btn-gray">Life and Style</a>
+                                    <a href="#" class="btn btn-gray">Technology</a><br>
+                                    <a href="#" class="btn btn-gray">Sports</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lowerfooter">
+
+                <div class="row">
+                    <div class="col-md-10 v-d-bg col-md-offset-2">
+                        <div class="col-md-8 col-sm-8"><img src="img/logo-f.png" alt=""></div>
+                        <div class="col-md-4"><p class="white">Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    {{ super() }}
+    </body>
+{% endblock %}

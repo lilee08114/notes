@@ -1,0 +1,368 @@
+{% extends 'layout.html' %}
+{% from 'bootstrap/form.html' import render_form %}
+
+{% block head %}
+{{ super() }}
+{% endblock %}
+
+{% block body %}
+
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+
+        <header>
+            <div class="top-news">
+                   <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-md-3 dark-gray-bg text-right">
+                               <h5 class="text-uppercase white text-bold">BREAKING NEWS</h5>
+                           </div>
+                           <div class="col-md-9 light-gray-bg">
+                                <div class="top-news-slide">
+                                    <div class="item">
+                                       <p class="e-light-gray text-uppercase">Apple boosts iMac screen resolution, lowers price of top-end 27-in. machine by 8%</p>
+                                   </div>
+                                   <div class="item">
+                                       <p class="e-light-gray text-uppercase">Apple boosts iMac screen resolution, lowers price of top-end 27-in. machine by 8%</p>
+                                   </div>
+                                   <div class="item">
+                                       <p class="e-light-gray text-uppercase">Apple boosts iMac screen resolution, lowers price of top-end 27-in. machine by 8%</p>
+                                   </div>
+                                </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="main-head">
+                   <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3 text-right">
+                               <h1 class="logo"><span class="hidden">ECOTA</span><img src="img/logo.png" alt=""></h1>
+                           </div>
+                           <div class="col-md-9 dark-gray-bg no-padding">
+                               <div class="add-area text-center">
+                                   <img class="img-responsive" src="img/add.jpg" alt="">
+                               </div>
+                                   <nav class="navbar navbar-default no-mb">
+                                          <div class="navbar-header">
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                              <span class="sr-only">Toggle navigation</span>
+                                              <span class="icon-bar"></span>
+                                              <span class="icon-bar"></span>
+                                              <span class="icon-bar"></span>
+                                            </button>
+                                          </div>
+                                          <div id="navbar" class="navbar-collapse collapse no-margin no-padding">
+                                            <ul class="nav navbar-nav">
+                                              <li class="dropdown active">
+                                                <a href="#" class="red-nav dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <i class="fa fa-bars"></i> <span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                  <li><a href="index.html">Homepage 1</a></li>
+                                                  <li><a href="homepage2.html">Homepage 2</a></li>
+                                                </ul>
+                                              </li>
+                                              <li><a class="pink-nav" href="#">Coding <i class="fa fa-bars"></i></a></li>
+                                              <li><a class="sky-blue-nav" href="#">Design <i class="fa fa-bars"></i></a></li>
+                                              <li><a class="orange-nav" href="#">Mobile <i class="fa fa-bars"></i></a></li>
+                                              <li><a class="violet-nav" href="#">Graphic <i class="fa fa-bars"></i></a></li>
+                                              <!-- <li><a class="green-nav" href="#">UI design <i class="fa fa-bars"></i></a></li> -->
+                                             <li class="dropdown">
+                                                <a href="#" class="red-nav dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <i class="fa fa-bars"></i> <span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                  <li><a href="about.html">About Us</a></li>
+                                                  <li><a href="about-author.html">About</a></li>
+                                                  <li><a href="standard-post.html">Standard Post</a></li>
+                                                  <li><a href="video-post.html">Video Post</a></li>
+                                                  <li><a href="audio-post.html">Audio Post</a></li>
+
+                                                </ul>
+                                              </li>
+                                              <li><a class="green-nav" href="contact.html">Contact <i class="fa fa-bars"></i></a></li>
+                                            </ul>
+                                          </div><!--/.nav-collapse -->
+                                  </nav>
+                           </div>
+                        </div>
+                   </div>
+               </div>
+        </header>
+        <div class="page-title-title">
+          <div class="container-fluid">
+            <h2 class="p-title white text-uppercase text-bold">ABout</h2>
+          </div>
+        </div>
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 text-center about-author">
+                <img class="img-responsive" src="img/author-main.jpg" alt="">
+                <h3 class="text-bold text-uppercase d-blak mt-30">Follow Me</h3>
+                <div class="f-social mt-30">
+                    <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                    <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                    <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
+                </div>
+              </div>
+              <div class="col-md-9 mt-50-detail">
+                <h4 class="title-t text-uppercase text-bold d-black d-bb-s">jorden harris</h4>
+                <p class="mt-40 lh-32">On your mark get set and go now. Got a dream and we just know now we're gonna make our dream come true. The ship set ground on the shore of this uncharted desert isle with Gilligan the Skipper too the millionaire and his wife. Love exciting and new. Come aboard were expecting you. Love life's sweetest reward Let it flow it floats back to you. Didn't need no welfare states. Everybody pulled his weight. </p>
+                <p class="c-555 fz-15 lh-32 text-italic mt-30">And they're always glad you came. Believe it or not I'm walking on air. I never thought I could feel so free. Well the first thing you know ol' Jeds a millionaire. Kinfolk said Jed move away from there. The movie star the professor and Mary Ann here on Gilligans Isle. So join us here each week my friends you're sure to get a smile from seven stranded castaways here on Gilligans Isle.</p>
+                <p class="mt-40 fz-15">What might be right for you may not be right for some. Now the world don't move to the beat of just one drum. What might be right for you may not be right for some.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="subscribe mt-116">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-uppercase white text-bold text-center">subscribe to our newsleter</h2>
+                    <form action="#">
+                        <div class="row mt-50">
+                            <div class="col-md-4 col-md-offset-1">
+                              <input type="text" class="form-control" placeholder="Your Name">
+                            </div>
+                            <div class="col-md-4">
+                              <input type="email" class="form-control" placeholder="Email address">
+                            </div>
+                            <div class="col-md-2 text-left">
+                                <a href="#" class="btn btn-black text-uppercase text-bold">Subscribe</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        <section class="mt-116">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h2 class="title-t d-black text-uppercase text-bold">my latest posts</h2>
+              </div>
+            </div>
+            <div class="row mt-50">
+                    <div class="col-md-4 col-sm-6 mt-20">
+                        <div class="product-p-img">
+                            <img class="img-responsive" src="img/tec.jpg" alt="">
+                            <div class="product-p-content product-p-content-small text-center white-bg">
+                                <a href="#" class="btn btn-violet-t text-uppercase">technology</a>
+                                <h5 class="title text-uppercase d-black text-bold">Dell poised to reveal $53bn</h5>
+                                <p class="mt-20 mb-20">The first mate and his Skipper too will do their very best to make</p>
+                                <span class="add v-light-gray text-uppercase">
+                                    Oct 12, 2016  /  5 Comments
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mt-20">
+                        <div class="product-p-img">
+                            <img class="img-responsive" src="img/ent2.jpg" alt="">
+                            <div class="product-p-content product-p-content-small text-center white-bg">
+                                <a href="#" class="btn btn-pink text-uppercase">entertainment</a>
+                                <h5 class="title text-uppercase d-black text-bold">Tributes paid as Camera</h5>
+                                <p class="mt-20 mb-20">The first mate and his Skipper too will do their very best to make</p>
+                                <span class="add v-light-gray text-uppercase">
+                                    Oct 12, 2016  /  5 Comments
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mt-20">
+                        <div class="product-p-img">
+                            <img class="img-responsive" src="img/political.jpg" alt="">
+                            <div class="product-p-content product-p-content-small text-center white-bg">
+                                <a href="#" class="btn btn-green text-uppercase">political</a>
+                                <h5 class="title text-uppercase d-black text-bold">PM planning nine-month</h5>
+                                <p class="mt-20 mb-20">The first mate and his Skipper too will do their very best to make</p>
+                                <span class="add v-light-gray text-uppercase">
+                                    Oct 12, 2016  /  5 Comments
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-80">
+                    <div class="col-md-4 col-sm-6 mt-20">
+                        <div class="product-p-img">
+                            <img class="img-responsive" src="img/political1.jpg" alt="">
+                            <div class="product-p-content product-p-content-small text-center white-bg">
+                                <a href="#" class="btn btn-green text-uppercase">political</a>
+                                <h5 class="title text-uppercase d-black text-bold">Ken Clarke: 'Tone Theresa</h5>
+                                <p class="mt-20 mb-20">The first mate and his Skipper too will do their very best to make</p>
+                                <span class="add v-light-gray text-uppercase">
+                                    Oct 12, 2016  /  5 Comments
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mt-20">
+                        <div class="product-p-img">
+                            <img class="img-responsive" src="img/sports1.jpg" alt="">
+                            <div class="product-p-content product-p-content-small text-center white-bg">
+                                <a href="#" class="btn btn-orange-t text-uppercase">sports</a>
+                                <h5 class="title text-uppercase d-black text-bold">England must target</h5>
+                                <p class="mt-20 mb-20">The first mate and his Skipper too will do their very best to make</p>
+                                <span class="add v-light-gray text-uppercase">
+                                    Oct 12, 2016  /  5 Comments
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-4 col-sm-6 mt-20">
+                        <div class="product-p-img">
+                            <img class="img-responsive" src="img/tec1.jpg" alt="">
+                            <div class="product-p-content product-p-content-small text-center white-bg">
+                                <a href="#" class="btn btn-violet-t text-uppercase">sports</a>
+                                <h5 class="title text-uppercase d-black text-bold">Ireland's Sean O'Brien</h5>
+                                <p class="mt-20 mb-20">The first mate and his Skipper too will do their very best to make</p>
+                                <span class="add v-light-gray text-uppercase">
+                                    Oct 12, 2016  /  5 Comments
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </section>
+
+
+
+
+
+
+        <footer>
+            <div class="upperfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="fbt">
+                                <h3 class="white text-uppercase text-bold hr-b mt-30"> About us</h3>
+                                <p class="mt-40 f-gray">A man is born he's a man of means. Then along come two they got nothin' but their jeans. The ship set ground on the shore of this uncharted gilligan</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="fbt">
+                                <h3 class="white text-uppercase text-bold hr-b mt-30">Recent post</h3>
+                                <div class="r-post mt-50">
+                                    <img class="pull-left" src="img/rp1.png" alt="">
+                                    <div class="r-post-content pull-right">
+                                        <span class="foo text-uppercase f-gray">The first mate and Skipper too will do their</span>
+                                        <span class="add f-gray mt-10">Oct 10, 2016</span>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="r-post mt-20">
+                                    <img class="pull-left" src="img/rp2.png" alt="">
+                                    <div class="r-post-content pull-right">
+                                        <span class="foo text-uppercase f-gray">All of them had hair of gold like their mother</span>
+                                        <span class="add f-gray mt-10">Oct 10, 2016</span>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="r-post mt-20">
+                                    <img class="pull-left" src="img/rp3.png" alt="">
+                                    <div class="r-post-content pull-right">
+                                        <span class="foo text-uppercase f-gray">So this is the tale of our long long time</span>
+                                        <span class="add f-gray mt-10">Oct 10, 2016</span>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="fbt">
+                                <h3 class="white text-uppercase text-bold hr-b mt-30"> Twitter feed</h3>
+                                <div class="twitter-feed mt-50">
+                                    <div class="col-md-1 col-xs-2">
+                                        <i class="fa fa-twitter"></i>
+                                    </div>
+                                    <div class="col-md-11 col-xs-10">
+                                        <h4 class="text-uppercase white">Got a dream and we just know now we gonna <span> @ JAMES ANderson</span></h4>
+                                        <h6 class="title text-uppercase white mt-10">1 hours ago</h6>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="twitter-feed mt-20">
+                                    <div class="col-md-1 col-xs-2">
+                                        <i class="fa fa-twitter"></i>
+                                    </div>
+                                    <div class="col-md-11 col-xs-10">
+                                        <h4 class="text-uppercase white">Got a dream and we just know now we gonna <span> @ Micheal hosting</span></h4>
+                                        <h6 class="title text-uppercase white mt-10">1 hours ago</h6>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="twitter-feed mt-20">
+                                    <div class="col-md-1 col-xs-2">
+                                        <i class="fa fa-twitter"></i>
+                                    </div>
+                                    <div class="col-md-11 col-xs-10">
+                                        <h4 class="text-uppercase white">Got a dream and we just know now we gonna <span> @ chris evans </span></h4>
+                                        <h6 class="title text-uppercase white mt-10">1 hours ago</h6>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-70">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="fbt">
+                                <h3 class="white text-uppercase text-bold hr-b mt-30"> CONNECT WITH US</h3>
+                                <p class="mt-40 f-gray">That this group would somehow form a family that's the way we all became the Brady Bunch. The mate was a mighty sailin' man the Skipper brave and sure. Five passengers set sail that day for a three hour tour a three hour tour.</p>
+                                <div class="f-social mt-20">
+                                    <a class="mt-10" href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                    <a class="mt-10" href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                    <a class="mt-10" href="#"><i class="fa fa-pinterest fa-lg"></i></a>
+                                    <a class="mt-10" href="#"><i class="fa fa-instagram fa-lg"></i></a>
+                                    <a class="mt-10" href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                                    <a class="mt-10" href="#"><i class="fa fa-tumblr fa-lg"></i></a>
+                                    <a class="mt-10" href="#"><i class="fa fa-github fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-6 col-md-offset-1">
+                            <div class="fbt">
+                                <h3 class="white text-uppercase text-bold hr-b mt-30"> popular tags</h3>
+                                <div class="popular-tags mt-50">
+                                    <a href="#" class="btn btn-gray">Android</a>
+                                    <a href="#" class="btn btn-gray">Apple</a>
+                                    <a href="#" class="btn btn-gray">Apps and Software</a>
+                                    <a href="#" class="btn btn-gray">Dev and Design</a>
+                                    <a href="#" class="btn btn-gray">Gallery</a>
+                                    <a href="#" class="btn btn-gray">Games</a><br>
+                                    <a href="#" class="btn btn-gray">Life and Style</a>
+                                    <a href="#" class="btn btn-gray">Technology</a><br>
+                                    <a href="#" class="btn btn-gray">Sports</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lowerfooter">
+
+                <div class="row">
+                    <div class="col-md-10 v-d-bg col-md-offset-2">
+                        <div class="col-md-8 col-sm-8"><img src="img/logo-f.png" alt=""></div>
+                        <div class="col-md-4"><p class="white">Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    {{ super() }}
+
+
+    </body>
+{% endblock %}
