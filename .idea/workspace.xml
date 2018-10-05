@@ -17,7 +17,7 @@
     <SUITE FILE_PATH="coverage/fl$pss.coverage" NAME="pss Coverage Results" MODIFIED="1533389124868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fl$Flask__sasa_py_.coverage" NAME="Flask (sasa.py) Coverage Results" MODIFIED="1536761987909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/fl$start.coverage" NAME="start Coverage Results" MODIFIED="1537108751239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pic_pro" />
-    <SUITE FILE_PATH="coverage/fl$start__1_.coverage" NAME="start (1) Coverage Results" MODIFIED="1538740356440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fl$start__1_.coverage" NAME="start (1) Coverage Results" MODIFIED="1538757746442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fl$Flask__f_py___1_.coverage" NAME="Flask (f.py) (1) Coverage Results" MODIFIED="1533217906612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
@@ -62,7 +62,7 @@
           <entry key="html" value="34" />
           <entry key="pic_pro" value="1" />
           <entry key="pstat" value="1" />
-          <entry key="py" value="94" />
+          <entry key="py" value="95" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -72,7 +72,7 @@
           <entry key="HTML" value="34" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Profiler Session" value="1" />
-          <entry key="Python" value="94" />
+          <entry key="Python" value="95" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -82,7 +82,7 @@
           <entry key="dummy" value="4" />
           <entry key="html" value="2470" />
           <entry key="js" value="47" />
-          <entry key="py" value="6421" />
+          <entry key="py" value="6451" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -91,23 +91,23 @@
           <entry key="HTML" value="2470" />
           <entry key="JavaScript" value="47" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="6424" />
+          <entry key="Python" value="6454" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pic_pro/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="263">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="e#58#67#0" expanded="true" />
-                <marker date="1538749633748" expanded="true" signature="1213:1215" ph="..." />
-                <marker date="1538749633748" expanded="true" signature="1245:1250" ph="..." />
-                <marker date="1538749633748" expanded="true" signature="1245:1772" ph="..." />
+                <marker date="1538757799933" expanded="true" signature="1213:1215" ph="..." />
+                <marker date="1538757799933" expanded="true" signature="1245:1250" ph="..." />
+                <marker date="1538757799933" expanded="true" signature="1245:1773" ph="..." />
               </folding>
             </state>
           </provider>
@@ -117,7 +117,7 @@
         <entry file="file://$PROJECT_DIR$/pic_pro/static/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
-              <caret line="895" column="17" lean-forward="true" selection-start-line="895" selection-start-column="17" selection-end-line="895" selection-end-column="17" />
+              <caret line="895" column="17" selection-start-line="895" selection-start-column="17" selection-end-line="895" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -173,6 +173,15 @@
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pic_pro/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -290,11 +299,11 @@
         <option value="$PROJECT_DIR$/pic_pro/templates/404.html" />
         <option value="$PROJECT_DIR$/pic_pro/templates/about.html" />
         <option value="$PROJECT_DIR$/pic_pro/static/css/responsive.css" />
-        <option value="$PROJECT_DIR$/pic_pro/config.py" />
         <option value="$PROJECT_DIR$/pic_pro/form.py" />
         <option value="$PROJECT_DIR$/pic_pro/templates/index.html" />
         <option value="$PROJECT_DIR$/pic_pro/static/css/main.css" />
         <option value="$PROJECT_DIR$/pic_pro/views.py" />
+        <option value="$PROJECT_DIR$/pic_pro/config.py" />
       </list>
     </option>
   </component>
@@ -617,6 +626,16 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>os.getcwd()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>static_path</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>field.data.filename.lowercase.endswith(tuple(app.config['ALLOWED_IMAGE_EXTENSION']))</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -648,16 +667,6 @@
       </expression>
       <expression>
         <expression-string>validators</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>extra_validators</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>self.pre_validate</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -965,13 +974,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pic_pro/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fl/Lib/site-packages/wtforms/fields/core.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1025,20 +1027,27 @@
     <entry file="file://$PROJECT_DIR$/pic_pro/static/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
-          <caret line="895" column="17" lean-forward="true" selection-start-line="895" selection-start-column="17" selection-end-line="895" selection-end-column="17" />
+          <caret line="895" column="17" selection-start-line="895" selection-start-column="17" selection-end-line="895" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pic_pro/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="263">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="e#58#67#0" expanded="true" />
-            <marker date="1538749633748" expanded="true" signature="1213:1215" ph="..." />
-            <marker date="1538749633748" expanded="true" signature="1245:1250" ph="..." />
-            <marker date="1538749633748" expanded="true" signature="1245:1772" ph="..." />
+            <marker date="1538757799933" expanded="true" signature="1213:1215" ph="..." />
+            <marker date="1538757799933" expanded="true" signature="1245:1250" ph="..." />
+            <marker date="1538757799933" expanded="true" signature="1245:1773" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pic_pro/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
         </state>
       </provider>
     </entry>
