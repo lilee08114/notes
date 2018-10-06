@@ -21,7 +21,7 @@ class Production(BaseConfig):
     ALLOWED_IMAGE_EXTENSION = ['jpg', 'png', 'gif']
     MAX_IMAGE_SIZE = 5 * 1024 * 1024
     MAX_CONTENT_LENGTH = 20 * 1024 * 1024
-    IMAGE_UPLOADED_FILE = r'static/my_images'
+    IMAGE_UPLOADED_FILE = r'pic_pro/static/my_images'
     PRESERVE_CONTEXT_ON_EXCEPTION = True
 
 class Development(BaseConfig):
