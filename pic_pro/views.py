@@ -54,11 +54,7 @@ def _get_image_storage_path():
     today = datetime.now().strftime("%Y-%m-%d")
     image_folder_for_today = os.path.join(image_folder, today)
     if not os.path.exists(image_folder_for_today):
-        try:
-            original_umask = os.umask(0)
-            os.makedirs(image_folder_for_today)
-        finally:
-            os.umask(original_umask)
+        os.makedirs(image_folder_for_today, 0o777)
     unique_id = str(uuid1())
     file_path = os.path.join(image_folder_for_today, unique_id)
     # endpoint_path = os.path.join(image_folder, today, unique_id)
